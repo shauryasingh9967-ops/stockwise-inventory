@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stockwise - Inventory</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+      <div class="brand"><span class="logo" aria-hidden="true">S</span><span class="brand-name">Stockwise</span></div>
+      <nav id="nav"></nav>
+      <p class="side-foot">Inventory &amp; Data Management</p>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu"></button>
+        <h1 id="pageTitle">Dashboard</h1>
+        <div class="spacer"></div>
+        <button class="btn primary" id="addBtn"></button>
+      </header>
+      <section id="view" class="view" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <dialog id="dlg"></dialog>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
